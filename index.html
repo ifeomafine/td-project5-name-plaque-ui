@@ -13,7 +13,7 @@
         <div class="write-up">
             <h1>Name Plaque Application</h1>
             <p>Add any name of your choice and we will show you how much it cost. (Each letter is $5)</p>
-            <input type="text" class="text-area" placeholder="Enter a guess:" required>
+            <input type="text" id="text-value" class="text-area" placeholder="Enter a Name:" required>
         </div>
         <div class="fancy">
             <div class="left-fancy">
@@ -22,16 +22,20 @@
                         <input type="button" value="0">
                     <input type="button" value="0">
                     </div>
-                    <h2>NOAH OLATOYE</h2> 
+                    <h2 id="character"> YOUR NAME </h2> 
                 </div>
             </div>
             <div class="right-fancy">
-                <h4 class="total">Total: <span class="amount">$50</span></h4>
+                <h4 class="total">Total: <span class="amount" id="amount">$0</span></h4>
                 <br> 
                 <button class="btn" type="submit">Buy Now</button>
             </div>
         </div>
-       
+        <h4 class="message"></h4>
+        <h4 class="message2"></h4>
+        
     </div>
+    <script src="script.js"></script>
+    <script src="buynow.js"></script> 
 </body>
 </html>
