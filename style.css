@@ -18,6 +18,10 @@ body {
     font-family: monospace;
     font-weight: 900;
 }
+.box {
+    display: flex;
+    gap: 2%;
+}
 .text-area {
     color: #fff;
     background-color: rgb(52, 50, 53);
@@ -26,14 +30,16 @@ body {
      padding: 1rem 8rem 1rem 1rem;
 }
 .fancy {
-    margin-top: 2rem;
+    margin: 2rem 0rem;
     display: flex;
     justify-content: space-around;
     font-family: 'Courier New', Courier, monospace;
+    flex-wrap: wrap;
 }
 .right-fancy {
     display:flex;
     flex-direction: column;
+    margin: 1rem;
 }
 .total {
     background-color: #fff;
@@ -45,6 +51,27 @@ body {
     color: #fff;
     padding: 1rem 2rem;
     font-weight: 700;
+    cursor: pointer;
+}
+.btn:active {
+    background-color: rgb(11, 66, 66);
+    box-shadow: 0 5px rgb(255, 255, 102);
+    transform: translateY(10px);
+}
+.btn-refresh {
+    background-color: rgb(236, 53, 89);
+    border: none;
+    color: #fff;
+    padding: 1rem;
+    margin: -1rem 0rem;
+    font-weight: 700;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.btn-refresh:active {
+    background-color: rgb(61, 5, 16);
+    box-shadow: 0 5px rgb(255, 255, 102);
+    transform: translateY(10px);
 }
 .amount {
     font-size: x-large;
@@ -83,4 +110,27 @@ body {
 .message{
     color: white;
     margin-top: 2rem;
+}
+/* MEDIA QUERY */
+@media screen and (max-width:480px) {
+    .content {
+        top: 5%;
+        left: 5%;
+        position: absolute;
+    }
+    .box {
+        display: block;
+    }
+    .fancy {
+        margin: 2rem 1rem;
+        justify-content: flex-start;
+    }
+    .btn-refresh {
+        margin: 0rem 5rem;
+    }
+    .right-fancy {
+        display:flex;
+        flex-direction: column;
+        margin: 1rem 1rem 0rem 3rem;
+    }
 }
