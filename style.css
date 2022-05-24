@@ -122,11 +122,11 @@ body {
         display: block;
     }
     .fancy {
-        margin: 2rem 1rem;
+        margin: 3rem 0rem 0rem 2.5rem;
         justify-content: flex-start;
     }
     .btn-refresh {
-        margin: 0rem 5rem;
+        margin: 1rem 7rem;
     }
     .right-fancy {
         display:flex;
